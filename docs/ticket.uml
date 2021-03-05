@@ -19,8 +19,8 @@ class Theater {
 
 class Element {
     String name
+    AgeRange ageRange
     ?MemberShip memberShip
-    ?AgeRange ageRange
     ?Student student
     ?Handicapped
 }
@@ -40,6 +40,7 @@ enum Handicapped {
 }
 
 enum AgeRange {
+    General
     Senior
     Toddler
     ElementarySchool
@@ -52,8 +53,6 @@ class Plan {
     Bool late
     Bool movieDay
     Element element
-
-
 }
 
 class Customer {
