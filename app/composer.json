@@ -7,5 +7,10 @@
             "email": "yoshioka0627@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
     "require": {}
 }
