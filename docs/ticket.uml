@@ -1,0 +1,72 @@
+@startuml
+class Ticket {
+    Plan plan
+    Movie movie
+    Theater theater
+    DateTime useTime
+}
+
+class Movie {
+    String title
+    DateTime screeningTime
+}
+
+class Theater {
+    Moview movie
+    DateTime startTime
+    Int numberOfSeats
+}
+
+class Element {
+    String name
+    ?MemberShip memberShip
+    ?AgeRange ageRange
+    ?Student student
+    ?Handicapped
+}
+
+class MemberShip {
+    DateTime expiredAt
+}
+
+enum Student {
+    Colleage
+    JuniorOrHigh
+}
+
+enum Handicapped {
+    Children
+    GrownUp
+}
+
+enum AgeRange {
+    Senior
+    Toddler
+    ElementarySchool
+}
+
+class Plan {
+    String name
+    Int price
+    Int dayOfWeek
+    Bool late
+    Bool movieDay
+    Element element
+
+
+}
+
+class Customer {
+    Element element
+}
+
+Ticket -right- Plan
+Ticket -left- Movie
+Ticket -down- Theater
+Plan -- Element
+Element - MemberShip
+Element -left- AgeRange
+Element -right- Student
+Element -down- Handicapped
+Customer -- Element
+@enduml
