@@ -12,5 +12,7 @@
             "App\\": "src/"
         }
     },
-    "require": {}
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.80"
+    }
 }
