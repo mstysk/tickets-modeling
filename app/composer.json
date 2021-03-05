@@ -1,0 +1,11 @@
+{
+    "name": "yoshi/tickets",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yoshioka",
+            "email": "yoshioka0627@gmail.com"
+        }
+    ],
+    "require": {}
+}
