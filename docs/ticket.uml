@@ -18,8 +18,7 @@ class Theater {
 }
 
 class Element {
-    String name
-    AgeRange ageRange
+    ?AgeRange ageRange
     ?MemberShip memberShip
     ?Student student
     ?Handicapped
@@ -77,6 +76,6 @@ Element - MemberShip
 Element -left- AgeRange
 Element -right- Student
 Element -down- Handicapped
-Element -- PlanName
+Plan -- PlanName
 Customer -- Element
 @enduml
