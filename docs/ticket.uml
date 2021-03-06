@@ -22,6 +22,16 @@ class Element {
     ?MemberShip memberShip
     ?Student student
     ?Handicapped
+
+    Element generateCinema()
+    Element generateCinemaSenior()
+    Element generateGeneral()
+    Element generateSenior()
+    Element generateColleage()
+    Element generateJuniorOrHigh()
+    Element generateToddleOrElemenary()
+    Element generateHandicappedChildren()
+    Element generateHandicappedGrownup()
 }
 
 class MemberShip {
