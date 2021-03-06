@@ -30,24 +30,34 @@ class MemberShip {
 }
 
 enum Student {
-    Colleage
-    JuniorOrHigh
+    Colleage 学生（大・専）
+    JuniorOrHigh 中・高校生
 }
 
 enum Handicapped {
-    Children
-    GrownUp
+    Children 障がい者（学生以上）
+    GrownUp 障がい者（高校以下）
 }
 
 enum AgeRange {
-    General
-    Senior
-    Toddler
-    ElementarySchool
+    Senior シニア
+    TODDLERORELEMENTARY 幼児（3才以上）・小学生
+}
+
+enum PlanName {
+    シネマシティズン
+    シネマシティズン（60才以上）
+    一般
+    シニア（70才以上）
+    学生（大・専）
+    中・高校生
+    幼児（3才以上）・小学生
+    障がい者（学生以上）
+    障がい者（高校以下）
 }
 
 class Plan {
-    String name
+    PlanName name
     Int price
     Int dayOfWeek
     Bool late
@@ -67,5 +77,6 @@ Element - MemberShip
 Element -left- AgeRange
 Element -right- Student
 Element -down- Handicapped
+Element -- PlanName
 Customer -- Element
 @enduml
