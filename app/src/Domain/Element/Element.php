@@ -44,7 +44,7 @@ class Element
         );
     }
 
-    public static function generageCinemaSenior(): self
+    public static function generateCinemaSenior(): self
     {
         return new self(
             AgeRange::SENIOR(),
@@ -56,14 +56,14 @@ class Element
     {
         return new self();
     }
-    public static function generageSenior(): self
+    public static function generateSenior(): self
     {
         return new self(
             AgeRange::SENIOR(),
         );
     }
 
-    public static function generageColleage(): self
+    public static function generateColleage(): self
     {
         return new self(
             null,
@@ -72,7 +72,7 @@ class Element
         );
     }
 
-    public static function generageJuniorOrHigh(): self
+    public static function generateJuniorOrHigh(): self
     {
         return new self(
             null,
